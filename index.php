@@ -39,11 +39,11 @@ $prodotti = [$ciboCane, $giocoCane, $cucciaCane, $ciboGatto, $giocoGatto, $cucci
                 <?php foreach ($prodotti as $prodotto) : ?>
                     <div class="col">
                         <div class="card">
-                            <img class="card-img-top" src="<?php echo $prodotto->getImg() ?>" alt="<?php echo $prodotto->name ?>">
+                            <img class="card-img-top" src="<?= $prodotto->getImg() ?>" alt="<?= $prodotto->name ?>">
                             <div class="card-body">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <h3><?php echo $prodotto->name ?></h3>
+                                        <h3><?= $prodotto->name ?></h3>
                                     </li>
                                     <li>
                                         <strong>Categoria:</strong>
@@ -57,7 +57,7 @@ $prodotti = [$ciboCane, $giocoCane, $cucciaCane, $ciboGatto, $giocoGatto, $cucci
                                     <li>
                                         <strong>Tipo di articolo:</strong> <?= $prodotto->getType() ?>
                                     </li>
-                                    <li><strong>Peso:</strong> <?php echo $prodotto->getWeight() ?></li>
+                                    <li><strong>Peso:</strong> <?= $prodotto->getWeight() ?></li>
                                 </ul>
 
                             </div>
